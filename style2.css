@@ -15,7 +15,7 @@
   
   /* Hero section */
   #beranda {
-    background:url('/asset/BG\ beranda.png') center/cover no-repeat;
+    background:url('https://ciaa210.github.io/kelompok4/asset/BG beranda.png') center/cover no-repeat;
     position: relative;
   }
   #beranda::before {
@@ -123,4 +123,5 @@
   footer {
     font-size: 14px;
   }
+
   
