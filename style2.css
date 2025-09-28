@@ -1,0 +1,126 @@
+/* Tombol custom */
+.btn-utama {
+    background-color: #d62828 !important; /* merah sporty */
+    color: white !important;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+  }
+  
+  .btn-utama:hover {
+    box-shadow: 0 10px 10px rgba(214, 40, 40, 0.3);
+    transform: scale(1.05);
+    transition: all ease 300ms;
+  }
+  
+  /* Hero section */
+  #beranda {
+    background:url('/asset/BG\ beranda.png') center/cover no-repeat;
+    position: relative;
+  }
+  #beranda::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); /* overlay gelap biar teks keliatan */
+  }
+  #beranda .container {
+    position: relative;
+    z-index: 2; /* supaya teks di atas overlay */
+  }
+  
+  /* Tentang */
+  #tentang img {
+    width: 70%;  
+    height: 60%;   
+  margin: 0 auto;    /* biar kotaknya tetap center */
+  aspect-ratio: 1/1; 
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 0 15px 0 15px;
+  }
+  
+  /* Koleksi */
+  #koleksi .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #koleksi .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+    #koleksi .card2 img {
+    border: none;
+    width: 250px;
+    height: 142px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #koleksi .card2:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+
+  #koleksi .card1 img {
+    border: none;
+    width: 250px;
+    height: 142px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  #koleksi .card1:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+  
+  /* Grid custom untuk koleksi mobil */
+.grid-koleksi {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 kolom */
+    gap: 20px;
+  }
+  
+  .grid-koleksi .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .grid-koleksi .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsif */
+  @media (max-width: 1200px) {
+    .grid-koleksi {
+      grid-template-columns: repeat(3, 1fr); /* tablet 3 kolom */
+    }
+  }
+  @media (max-width: 768px) {
+    .grid-koleksi {
+      grid-template-columns: repeat(2, 1fr); /* hp 2 kolom */
+    }
+  }
+  @media (max-width: 500px) {
+    .grid-koleksi {
+      grid-template-columns: 1fr; /* hp kecil 1 kolom */
+    }
+  }
+  
+  /* Kontak */
+  #kontak {
+    background: #f9f9f9;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  /* Footer */
+  footer {
+    font-size: 14px;
+  }
+  
